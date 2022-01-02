@@ -1,0 +1,17 @@
+moduledir 'external_modules'
+
+mod 'stdlib',
+    :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
+    :branch => 'main'
+
+mod 'inifile',
+    :git => 'https://github.com/puppetlabs/puppetlabs-inifile',
+    :branch => 'main'
+
+mod 'archive',
+    :git => 'https://github.com/voxpupuli/puppet-archive',
+    :tag => 'v6.0.2'
+
+mod 'systemd',
+    :git => 'https://github.com/voxpupuli/puppet-systemd',
+    :tag => 'v3.5.1'

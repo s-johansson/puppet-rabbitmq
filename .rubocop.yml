@@ -5,7 +5,13 @@
 inherit_gem:
   voxpupuli-test: rubocop.yml
 
-# exclude Vagrantfile from snake_case checking
+# exclude Vagrantfile and Puppetfile from snake_case checking
 Style/FileName:
   Exclude:
     - '*/Vagrantfile'
+    - '*/*/Puppetfile'
+
+# exclude Puppetfile from ruby hash syntax checking
+Style/HashSyntax:
+  Exclude:
+    - '*/*/Puppetfile'
